@@ -18,7 +18,7 @@ Aplikasi ini dibuat untuk mengelola **data produk**. Setiap produk memiliki atri
 
 
 
-Entitas Utama: Produk
+Entitas Utama : **PRODUK**
 
 Atribut:
 
@@ -39,10 +39,10 @@ Atribut:
 
 
 
-* Bahasa Pemrograman : PHP 8.x
-* DBMS: MySQL/MariaDB (melalui XAMPP)
-* Driver Database: PDO (PHP Data Objects)
-* Server: PHP Built-in Server (`php -S`)
+* Bahasa Pemrograman : PHP 8.2.12
+* DBMS : MySQL/MariaDB (melalui XAMPP)
+* Driver Database : PDO (PHP Data Objects)
+* Server : PHP Built-in Server (`php -S`)
 * Tampilan : HTML dasar tanpa framework front-end
 
 
@@ -96,10 +96,9 @@ B) **Penjelasan Class**
 3.1 Import Database
 
 &nbsp;	1. Buat database baru : (di MySQL/MariaDB)
-
-&nbsp; 		 ```sql
-
-&nbsp; 		 CREATE DATABASE tugas\_php;
+		
+			```sql
+			CREATE DATABASE tugas\_php;
 
 &nbsp;	2. Import file **schema.sql** ke dalam database tersebut.
 
@@ -123,21 +122,20 @@ Pastikan file Database.php berisi konfigurasi berikut :
 
 Masuk ke folder public melalui terminal :
 
-&nbsp;	**cd C:\\xampp\\htdocs\\tugas\_php\\public**
+	cd C:\\xampp\\htdocs\\tugas\_php\\public
 
 
 
 Jalankan aplikasi :
 
-	**php -S localhost:8000**
-
+	php -S localhost:8000
 
 
 3.4 Akses Aplikasi
 
 Buka browser :
 
-	**http://localhost:8000**
+	http://localhost:8000
 
 
 
@@ -152,6 +150,9 @@ Buka browser :
 * Upload gambar produk.
 * Klik tombol Save.
 * Pastikan data yang baru ditambahkan muncul pada tabel di halaman utama (index.php).
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/4b8cb987-15a1-4af0-b89f-2da7287e3cc2" />
+
 
 
 
@@ -176,15 +177,22 @@ Buka browser :
 
 * Pastikan gambar tampil dengan benar di kolom *image*.
 
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/beeb740a-5720-4a1f-ab4a-981a22239b70" />
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/375c5346-5915-43f8-ad96-39c016f1fc88" />
+
+
 
 
 3\. Ubah Data Tertentu
 
 * Pada halaman index.php, klik tombol Edit pada salah satu produk.
-* Form edit menampilkan data lama (pre-filled).
+* Form edit menampilkan data lama (_pre-filled_).
 * Ubah beberapa field (misal : harga atau kategori).
 * Simpan perubahan.
 * Pastikan data yang telah diubah tampil sesuai di tabel.
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/9eb4c63f-3c4c-4ede-9e6f-bab2e4ff8ca9" />
+
 
 
 
@@ -193,3 +201,6 @@ Buka browser :
 * Pada halaman index.php, klik tombol Delete pada salah satu produk.
 * Sistem menghapus data dari database.
 * Pastikan baris produk yang dihapus tidak muncul lagi pada tabel.
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/6d808e92-9543-4bab-9f90-7a286e320e8d" />
+
